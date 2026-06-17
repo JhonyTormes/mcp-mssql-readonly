@@ -1,0 +1,32 @@
+{
+  "name": "mcp-mssql-readonly",
+  "version": "1.0.0",
+  "description": "A read-only MCP (Model Context Protocol) server for Microsoft SQL Server. AI agents can safely explore database schemas and query records — without any risk of modifying data or structure.",
+  "keywords": [
+    "mcp",
+    "mssql",
+    "sql-server",
+    "read-only",
+    "model-context-protocol",
+    "database"
+  ],
+  "homepage": "https://github.com/JhonyTormes/mcp-mssql-readonly",
+  "license": "MIT",
+  "author": "JHONY",
+  "bin": {
+    "mcp-mssql-readonly": "build/McpSqlServer.exe"
+  },
+  "scripts": {
+    "build": "powershell -ExecutionPolicy Bypass -File publish.ps1",
+    "postinstall": "powershell -ExecutionPolicy Bypass -File publish.ps1"
+  },
+  "files": [
+    "build/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
