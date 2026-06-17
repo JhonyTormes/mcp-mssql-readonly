@@ -1,3 +1,5 @@
+> **📖 Leia em português:** [README.pt-BR.md](README.pt-BR.md)
+
 # mcp-mssql-readonly
 
 A **read-only** MCP (Model Context Protocol) server for Microsoft SQL Server.
