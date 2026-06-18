@@ -10,6 +10,11 @@ if (-not (Test-Path $project)) {
     exit 1
 }
 
+if (Test-Path "$OutputDir/McpSqlServer.exe") {
+    Write-Host "Build já existe em $OutputDir, pulando compilação." -ForegroundColor Green
+    exit 0
+}
+
 Write-Host "Publishing $project as self-contained ($Runtime)..." -ForegroundColor Cyan
 
 dotnet publish $project `

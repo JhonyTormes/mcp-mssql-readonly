@@ -17,8 +17,7 @@
     "mcp-mssql-readonly": "build/McpSqlServer.exe"
   },
   "scripts": {
-    "build": "powershell -ExecutionPolicy Bypass -File publish.ps1",
-    "postinstall": "powershell -ExecutionPolicy Bypass -File publish.ps1"
+    "build": "powershell -ExecutionPolicy Bypass -File publish.ps1"
   },
   "files": [
     "build/",
